@@ -18,7 +18,7 @@
 
   <div class="mb-3">
     <%= form.label :genre_id, class: 'form-label' %>
-    <%= form.select :genre_ids, Genre.pluck(:music_genre, :id), {}, {multiple: true} %>
+    <%= form.select :genre_ids, Genre.pluck(:music_genre, :id), {}, {multiple: true, data: {controller: 'slim'}} %>
   </div> 
 
   <div class="mb-3">
